@@ -1,0 +1,40 @@
+# VIP商店配置文件
+
+# 金币购买价格
+coin-prices:
+  week: 50000
+  month: 500000
+  permanent: 5000000
+
+# 点券购买价格
+points-prices:
+  week: 50
+  month: 500
+  permanent: 5000
+
+# VIP权限组名称
+vip-group: "vip1"
+default-group: "default"
+
+# GUI设置
+gui:
+  main-title: "VIP商店"
+  coin-shop-title: "金币购买VIP"
+  points-shop-title: "点券购买VIP"
+
+# 消息设置
+messages:
+  no-permission: "&c你没有权限使用这个命令！"
+  insufficient-coins: "&c你的金币不足！需要 {amount} 金币。"
+  insufficient-points: "&c你的点券不足！需要 {amount} 点券。"
+  purchase-success: "&a成功购买VIP！到期时间：{expiry}"
+  purchase-failed: "&c购买失败！请联系管理员。"
+  already-vip: "&e你已经是VIP了！"
+  vip-expired: "&c你的VIP已过期！"
+  vip-removed: "&e你的VIP权限已被移除。"
+
+# 数据存储设置
+storage:
+  type: "yaml" # 可选: yaml, sqlite
+  file: "vip_data.yml"
+

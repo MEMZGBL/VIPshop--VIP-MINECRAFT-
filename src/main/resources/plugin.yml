@@ -1,0 +1,24 @@
+name: VIPShop
+version: 1.0
+main: com.manus.vipshop.VIPShop
+api-version: 1.20
+author: Manus
+description: VIP商店插件，支持金币和点券购买VIP
+website: https://manus.ai
+
+softdepend: [Vault, PlayerPoints, LuckPerms, PlaceholderAPI]
+
+commands:
+  getvip:
+    description: 打开VIP商店
+    usage: /getvip
+    permission: vipshop.use
+
+permissions:
+  vipshop.use:
+    description: 使用VIP商店的权限
+    default: true
+  vipshop.admin:
+    description: VIP商店管理员权限
+    default: op
+
